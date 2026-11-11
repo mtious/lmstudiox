@@ -1,0 +1,17 @@
+[build-system]
+requires = ["flit_core >=3.11,<5"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "lmstudiox"
+version = "1.5.0rc1"
+description = "An extended Python SDK for LM Studio with support for disabling thinking mode."
+readme = "README.md"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+authors = [{name = "mtious", email = "mtious@outlook.com"}]
+keywords = ["lmstudio", "lmstudiox", "openai"]
+dependencies = ["lmstudio~=1.5.0"]
+
+[project.urls]
+Repository = "https://github.com/mtious/lmstudiox"

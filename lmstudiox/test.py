@@ -6,9 +6,9 @@ async def use_lmstudio():
     async with lmstudio.AsyncClient("localhost:1234") as client:
         model = await client.llm.model("qwen3.5-9b")
         stream = await model.respond_stream("hello !")
-        async for fragment in stream:
-            if fragment.content:
-                print(fragment.content, end="", flush=True)
+        async for x in stream:
+            if x.content:
+                print(x.content, end="", flush=True)
         print()
 
 
@@ -17,9 +17,9 @@ async def use_lmstudiox():
     async with lmstudiox.AsyncClient("localhost:1234") as client:
         model = await client.llm.model("qwen3.5-9b")
         stream = await model.respond_stream("hello !", config=lmstudiox.LlmPredictionConfig(enable_thinking=False))
-        async for fragment in stream:
-            if fragment.content:
-                print(fragment.content, end="", flush=True)
+        async for x in stream:
+            if x.content:
+                print(x.content, end="", flush=True)
         print()
 
 
