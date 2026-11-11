@@ -60,7 +60,6 @@ asyncio.run(use_lmstudiox())
 
 - Python >= 3.12
 - LM Studio with its local API server enabled
-- `lmstudio` Python SDK ~= 1.5.0
 
 ## Acknowledgements
 
