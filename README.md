@@ -2,6 +2,8 @@
 
 **An extended Python SDK for LM Studio with support for explicitly enabling or disabling model thinking mode.**
 
+> **Unofficial project.** `lmstudiox` is an independent, community-developed project. It is not affiliated with, endorsed by, or officially maintained by LM Studio or its developers.
+
 `lmstudiox` extends the official [`lmstudio`](https://github.com/lmstudio-ai/lmstudio-python) Python SDK with additional capabilities, including explicit control over model thinking mode.
 
 It provides an API compatible with the original SDK while allowing developers to disable thinking mode when needed.
