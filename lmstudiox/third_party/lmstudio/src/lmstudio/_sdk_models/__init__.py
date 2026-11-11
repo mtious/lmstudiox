@@ -10073,6 +10073,7 @@ class LlmPredictionConfigInput(
     reasoning_parsing: LlmReasoningParsing | None = field(
         name="reasoningParsing", default=None
     )
+    enable_thinking: bool | None = field(name="enableThinking", default=None)
     raw: KvConfig | None = None
 
 
@@ -10105,6 +10106,7 @@ class LlmPredictionConfigInputDict(TypedDict):
     ]
     speculativeDecodingMinContinueDraftingProbability: NotRequired[float | None]
     reasoningParsing: NotRequired[LlmReasoningParsingDict | None]
+    enableThinking: NotRequired[bool | None]
     raw: NotRequired[KvConfigDict | None]
 
 
@@ -10139,6 +10141,7 @@ class LlmPredictionConfig(LMStudioStruct["LlmPredictionConfigDict"], kw_only=Tru
     reasoning_parsing: ReasoningParsing | None = field(
         name="reasoningParsing", default=None
     )
+    enable_thinking: bool | None = field(name="enableThinking", default=None)
     raw: Raw | None = None
 
 
@@ -10167,6 +10170,7 @@ class LlmPredictionConfigDict(TypedDict):
     speculativeDecodingMinDraftLengthToConsider: NotRequired[int | None]
     speculativeDecodingMinContinueDraftingProbability: NotRequired[float | None]
     reasoningParsing: NotRequired[LlmReasoningParsingDict | None]
+    enableThinking: NotRequired[bool | None]
     raw: NotRequired[KvConfigDict | None]
 
 

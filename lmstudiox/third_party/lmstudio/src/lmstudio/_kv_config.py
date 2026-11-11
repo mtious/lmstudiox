@@ -249,6 +249,7 @@ SUPPORTED_SERVER_KEYS: dict[str, DictObject] = {
         },
         "reasoning": {
             # Nested KV structure is flattened in client API
+            "enableThinking": ConfigField("enableThinking"),
             "parsing": ConfigField("reasoningParsing"),
         },
         "speculativeDecoding": {
